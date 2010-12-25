@@ -25,18 +25,18 @@ Feature: code-breaker submits guess
     | code | guess | mark |
     | 1234 | 5254  | ++   |
     | 1234 | 5154  | +-   |
-    | 1234 | 2545  | --   |    
+    | 1234 | 2545  | --   |
     
   Scenarios: 3 numbers correct
     | code | guess | mark |
     | 1234 | 5234  | +++  |
     | 1234 | 5134  | ++-  |
     | 1234 | 5124  | +--  |
-    | 1234 | 5123  | ---  |        
+    | 1234 | 5123  | ---  |
     
   Scenarios: all numbers correct
     | code | guess | mark |
     | 1234 | 1234  | ++++ |
     | 1234 | 1243  | ++-- |
     | 1234 | 1423  | +--- |
-    | 1234 | 4321  | ---- |    
+    | 1234 | 4321  | ---- |
