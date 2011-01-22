@@ -53,6 +53,14 @@ module Codebreaker
           marker.number_match_count.should == 1
         end
       end
+      
+      context 'with 1 exact match duplicated' do
+        it 'returns 0' do
+          pending 'refactoring number_match_count'
+          marker = Marker.new('1234','1155')
+          marker.number_match_count.should == 0
+        end
+      end
     end
   end
 end

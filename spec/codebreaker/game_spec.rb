@@ -20,16 +20,13 @@ module Codebreaker
       let(:marker) { gimme_next(Marker) }
       before do
         give(marker).exact_match_count { 4 }
-        give(marker).number_match_count { 0 }                 
-
+        give(marker).number_match_count { 0 }
         game.guess('1234')
-      end
-      it 'instantiates a marker with the secret and guess' do
-        verify!(marker).initialize('1234','1234')
       end
       it 'outputs the exact matches followed by the number matches' do
         verify(output).puts('++++')
       end      
     end
   end
+  
 end
